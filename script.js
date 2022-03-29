@@ -2,7 +2,7 @@ let lastPalga = null;
 
 window.addEventListener("load" , () => {
     console.log('page has been loaded');
-    if(window.location.href.includes('main')){
+    if(window.location.href.includes('index')){
         loadPage();
     }
     else{
