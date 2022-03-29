@@ -2,11 +2,12 @@ let lastPalga = null;
 
 window.addEventListener("load" , () => {
     console.log('page has been loaded');
-    if(sessionStorage.getItem("page") === null || sessionStorage.getItem("page") === "0"){
+    if(sessionStorage.getItem("page") == null || sessionStorage.getItem("page") === "0"){
         sessionStorage.setItem("page" , "0");
         loadPage();
     }
     else{
+        sessionStorage.setItem("page" , "1");
         loadTimeline();
     }
 });
