@@ -57,8 +57,10 @@ body {
 
 #ttl {
     font-size: 6vmax;
-    font-weight: bold;
-    margin-top: 30vh;
+    font-weight: bold; 
+}
+
+#start-page {
     animation: titleStart 12s infinite linear;
 }
 
@@ -84,14 +86,31 @@ body {
     filter: none;
 }
 
-@keyframes titleStart {
-    0% {
-        margin-top: 10vh;
+@media only screen and (max-width: 1440px) {
+    @keyframes titleStart {
+        0% {
+            margin-top: 30vh;
+        }
+        50% {
+            margin-top: 35vh;
+        }
+        100% {
+            margin-top: 30vh;
+        }
     }
-    50% {
-        margin-top: 22vh;
+  }
+
+  @media only screen and (min-width: 1441px) {
+    @keyframes titleStart {
+        0% {
+            margin-top: 15vh;
+        }
+        50% {
+            margin-top: 25vh;
+        }
+        100% {
+            margin-top: 15vh;
+        }
     }
-    100% {
-        margin-top: 10vh;
-    }
-}
+  }
+
