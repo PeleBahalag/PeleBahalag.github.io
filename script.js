@@ -22,20 +22,19 @@ const loadPage = () => {
 
 const insideScreen = () => {
     sessionStorage.setItem("page" , "1");
-    window.location.href("https://pelebahalag.github.io/insideScreen.html");
-    
+    document.location.href = "https://pelebahalag.github.io/insideScreen.html";
 }
 
 const outsideScreen = () => {
     sessionStorage.setItem("page" , "2");
-    window.location.href("https://pelebahalag.github.io/outsideScreen.html");
+    document.location.href = "https://pelebahalag.github.io/outsideScreen.html";
     
 }
 
 const loadTimeline = () => { 
     document.getElementById("back").addEventListener("click" , () => {
         sessionStorage.setItem("page" , "0");
-        window.location.href("https://pelebahalag.github.io/index.html");
+        document.location.href = "https://pelebahalag.github.io/index.html";
     });
     if(sessionStorage.getItem("page") === "1"){
         document.getElementById("arrow3").addEventListener("click" , openCard);
