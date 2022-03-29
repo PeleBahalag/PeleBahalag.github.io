@@ -20,10 +20,12 @@ const loadPage = () => {
 
 const insideScreen = () => {
     window.location.href = "https://pelebahalag.github.io/insideScreen.html";
+
 }
 
 const outsideScreen = () => {
     window.location.href = "https://pelebahalag.github.io/outsideScreen.html";
+
 }
 
 const loadTimeline = () => { 
