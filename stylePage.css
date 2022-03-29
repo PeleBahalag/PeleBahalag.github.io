@@ -122,7 +122,7 @@ body {
 
 #links-div {
     background-image: url("./assets/images/line.png");
-    /* background-size: 100vw 600vh; */
+    background-size: 100vw 600vh;
     background-attachment: fixed;
     background-repeat: no-repeat;
     width: 100vw;
