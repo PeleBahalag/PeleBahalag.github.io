@@ -1,0 +1,177 @@
+@font-face {
+    font-family: Heebo;
+    src: url('./assets/fonts/Heebo-VariableFont_wght.ttf');
+}
+html,
+body {
+    background: #e9d7c0;
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    text-align: center;
+    width: 100vw;
+    scroll-behavior: smooth;
+    font-family: Heebo;
+    margin: auto;
+    user-select: none;
+    overflow-x: hidden;
+    direction: rtl;
+}
+
+#back {
+    z-index: 999999;
+    width: 6vmax;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 2vmax;
+    margin-right: 5vmax;
+    cursor: pointer;
+    transform-origin: center;
+}
+
+#back:hover {
+    animation: rotate360 .6s ease;
+}
+
+@keyframes rotate360 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#sayarim {
+    z-index: 999999;
+    width: 7vmax;
+    position: fixed;
+    left: 0;
+    top: 0;
+    margin: 1vmax;
+}
+
+#pele {
+    z-index: 999999;
+    width: 8vmax;
+    position: fixed;
+    right: 0;
+    top: 0;
+    margin: 1vmax;
+}
+
+#leaf {
+    position: fixed;
+    width: 16vmax;
+    bottom: 0;
+    left: 0;
+}
+
+#orange-splash {
+    position: fixed;
+    width: 22vmax;
+    top: 0;
+    left: 0;
+}
+
+#blue-splash {
+    position: fixed;
+    width: 22vmax;
+    bottom: 0;
+    right: 0;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.icon-arrow {
+    width: 16vmax;
+    height: 18vmax;
+    position: relative;
+    margin-top: 0;
+    margin-bottom: -10vh;
+    display: block;
+    margin: auto;
+    transition: all .2s ease-out;
+}
+
+.openable:hover > .icon-arrow{
+    width: 20vmax;
+}
+
+.blue {
+    margin-right: 50vw;
+}
+
+.orange {
+    margin-left: 50vw;
+}
+
+.icon-bubble {
+    width: 20vmax;
+    height: 20vmax;
+    position: relative;
+    margin-top: 0;
+    margin-bottom: -10vh;
+    display: block;
+    margin: auto;
+    transition: all .2s ease-out;
+}
+
+#links-div {
+    background-image: url("./assets/images/line.png");
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 600vh;
+    margin: auto;
+}
+
+.card {
+    display: none;
+    background: #e9d7c0;
+    border-width: 5px;
+    border-color: rgb(161, 152, 131);
+    width: 40vw;
+    margin: auto;
+}
+
+.openable {
+    cursor: pointer;
+    filter: drop-shadow(rgb(255, 255, 237) 20px 20px 20px);
+}
+
+#palga {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+.icon-palga {
+    z-index: 400;
+    margin: 1vmax;
+    margin-top: -6vh;
+    width: 6vmax;
+    transition: .2s ease;
+}
+
+.icon-palga:hover {
+    width: 9vmax;
+}
+
+#last-arrows {
+    width: 65vw;
+    margin: auto;
+    display: block;
+    position: relative;
+}
+
+#last-arrows2 {
+    width: 60.5vw;
+    margin: auto;
+    display: block;
+    position: relative;
+}

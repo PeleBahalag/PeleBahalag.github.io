@@ -1,0 +1,97 @@
+@font-face {
+    font-family: Heebo;
+    src: url('./assets/fonts/Heebo-VariableFont_wght.ttf');
+}
+html,
+body {
+    background: #e9d7c0;
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    text-align: center;
+    width: 100vw;
+    scroll-behavior: smooth;
+    font-family: Heebo;
+    margin: auto;
+    user-select: none;
+}
+
+#sayarim {
+    z-index: 999999;
+    width: 7vmax;
+    position: fixed;
+    left: 0;
+    top: 0;
+    margin: 1vmax;
+}
+
+#pele {
+    z-index: 999999;
+    width: 8vmax;
+    position: fixed;
+    right: 0;
+    top: 0;
+    margin: 1vmax;
+}
+
+#leaf {
+    position: fixed;
+    width: 16vmax;
+    bottom: 0;
+    left: 0;
+}
+
+#orange-splash {
+    position: fixed;
+    width: 22vmax;
+    top: 0;
+    left: 0;
+}
+
+#blue-splash {
+    position: fixed;
+    width: 22vmax;
+    bottom: 0;
+    right: 0;
+}
+
+#ttl {
+    font-size: 6vmax;
+    font-weight: bold;
+    margin-top: 30vh;
+    animation: titleStart 12s infinite linear;
+}
+
+#subttl {
+    font-size: 3vmax;
+    font-weight: 100;
+}
+
+.startbtn {
+    width: 20vmax;
+    margin: 1vmax;
+    cursor: pointer;
+    transition: all .5s ease;
+    filter: drop-shadow(2px 7px 5px);
+}
+
+.startbtn:hover {
+    width: 22vmax;
+    filter: drop-shadow(20px 20px 20px);
+}
+
+.startbtn:active {
+    filter: none;
+}
+
+@keyframes titleStart {
+    0% {
+        margin-top: 10vh;
+    }
+    50% {
+        margin-top: 22vh;
+    }
+    100% {
+        margin-top: 10vh;
+    }
+}
