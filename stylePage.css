@@ -18,6 +18,18 @@ body {
     direction: rtl;
 }
 
+h5 {
+    font-size: 1.5vmax;
+}
+
+h6 {
+    font-size: 1.3vmax;
+}
+
+p {
+    font-size: 1vmax;
+}
+
 #back {
     z-index: 999999;
     width: 6vmax;
@@ -130,15 +142,6 @@ body {
     margin: auto;
 }
 
-.card {
-    display: none;
-    background: #e9d7c0;
-    border-width: 5px;
-    border-color: rgb(161, 152, 131);
-    width: 40vw;
-    margin: auto;
-}
-
 .openable {
     cursor: pointer;
     filter: drop-shadow(rgb(255, 255, 237) 20px 20px 20px);
@@ -174,4 +177,26 @@ body {
     margin: auto;
     display: block;
     position: relative;
+}
+
+@media only screen and (max-width: 1440px) {
+    .card {
+        display: none;
+        background: #e9d7c0;
+        border-width: 5px;
+        border-color: rgb(161, 152, 131);
+        width: 80vw;
+        margin: auto;
+    }
+}
+
+@media only screen and (min-width: 1441px) {
+    .card {
+        display: none;
+        background: #e9d7c0;
+        border-width: 5px;
+        border-color: rgb(161, 152, 131);
+        width: 40vw;
+        margin: auto;
+    }
 }
