@@ -37,6 +37,7 @@ const outsideScreen = () => {
 const loadTimeline = () => { 
     document.getElementById("back").addEventListener("click" , () => {
         // document.location.href = "index.html";
+        sessionStorage.setItem("page" , "0");
         window.open("https://pelebahalag.github.io/index.html");
     });
     if(sessionStorage.getItem("page") === "1"){
