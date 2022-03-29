@@ -30,12 +30,12 @@ const loadTimeline = () => {
     document.getElementById("back").addEventListener("click" , () => {
         window.location.href = "https://pelebahalag.github.io";
     });
-    if(sessionStorage.getItem("page") === "1"){
+    if(window.location.href.includes("inside")){
         document.getElementById("arrow3").addEventListener("click" , openCard);
         document.getElementById("arrow4").addEventListener("click" , openCard);
         document.getElementById("arrow5").addEventListener("click" , openCard);
     }
-    else if(sessionStorage.getItem("page") === "2"){
+    else if(window.location.href.includes("outside")){
         document.getElementById("arrow2").addEventListener("click" , openCard);
         document.getElementById("arrow3").addEventListener("click" , openCard);
         document.getElementById("arrow4").addEventListener("click" , openCard);
