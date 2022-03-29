@@ -33,14 +33,15 @@ const outsideScreen = () => {
 
 const loadTimeline = () => { 
     document.getElementById("back").addEventListener("click" , () => {
-        document.location.href = "index.html";
+        // document.location.href = "index.html";
+        window.open("https://pelebahalag.github.io/index.html");
     });
-    if(document.location.href.includes("insideScreen.html")){
+    if(sessionStorage.getItem("page") === "1"){
         document.getElementById("arrow3").addEventListener("click" , openCard);
         document.getElementById("arrow4").addEventListener("click" , openCard);
         document.getElementById("arrow5").addEventListener("click" , openCard);
     }
-    else if(document.location.href.includes("outsideScreen.html")){
+    else if(sessionStorage.getItem("page") === "2"){
         document.getElementById("arrow2").addEventListener("click" , openCard);
         document.getElementById("arrow3").addEventListener("click" , openCard);
         document.getElementById("arrow4").addEventListener("click" , openCard);
