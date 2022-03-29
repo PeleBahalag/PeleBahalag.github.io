@@ -21,14 +21,12 @@ const loadPage = () => {
 }
 
 const insideScreen = () => {
-    // document.location.href = "insideScreen.html";
     sessionStorage.setItem("page" , "1");
     window.location.href("https://pelebahalag.github.io/insideScreen.html");
     
 }
 
 const outsideScreen = () => {
-    // document.location.href = "outsideScreen.html";
     sessionStorage.setItem("page" , "2");
     window.location.href("https://pelebahalag.github.io/outsideScreen.html");
     
@@ -36,7 +34,6 @@ const outsideScreen = () => {
 
 const loadTimeline = () => { 
     document.getElementById("back").addEventListener("click" , () => {
-        // document.location.href = "index.html";
         sessionStorage.setItem("page" , "0");
         window.location.href("https://pelebahalag.github.io/index.html");
     });
