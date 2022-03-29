@@ -15,21 +15,21 @@ const loadPage = () => {
     let insideBtn = document.getElementById("inside");
     let outsideBtn = document.getElementById('outside');
     sessionStorage.setItem("page" , "0");
-    
+
     insideBtn.addEventListener("click" , insideScreen);
     outsideBtn.addEventListener("click" , outsideScreen);
 }
 
 const insideScreen = () => {
     // document.location.href = "insideScreen.html";
-    sessionStorage.setItem("page" , "1");
+    //sessionStorage.setItem("page" , "1");
     window.open("https://pelebahalag.github.io/insideScreen.html");
     
 }
 
 const outsideScreen = () => {
     // document.location.href = "outsideScreen.html";
-    sessionStorage.setItem("page" , "2");
+    //sessionStorage.setItem("page" , "2");
     window.open("https://pelebahalag.github.io/outsideScreen.html");
     
 }
