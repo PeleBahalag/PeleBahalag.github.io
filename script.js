@@ -3,7 +3,6 @@ let lastPalga = null;
 window.addEventListener("load" , () => {
     console.log('page has been loaded');
     if(sessionStorage.getItem("page") == null || sessionStorage.getItem("page") === "0"){
-        sessionStorage.setItem("page" , "0");
         loadPage();
     }
     else{
@@ -15,7 +14,8 @@ window.addEventListener("load" , () => {
 const loadPage = () => {
     let insideBtn = document.getElementById("inside");
     let outsideBtn = document.getElementById('outside');
-
+    sessionStorage.setItem("page" , "0");
+    
     insideBtn.addEventListener("click" , insideScreen);
     outsideBtn.addEventListener("click" , outsideScreen);
 }
