@@ -2,7 +2,8 @@ let lastPalga = null;
 
 window.addEventListener("load" , () => {
     console.log('page has been loaded');
-    if(window.location.href.includes('index')){
+    if(sessionStorage.getItem("page") === null || sessionStorage.getItem("page") === "0"){
+        sessionStorage.setItem("page" , "0");
         loadPage();
     }
     else{
@@ -19,16 +20,20 @@ const loadPage = () => {
 }
 
 const insideScreen = () => {
-    document.location.href = "insideScreen.html";
+    // document.location.href = "insideScreen.html";
+    window.open("https://pelebahalag.github.io/insideScreen.html");
+    sessionStorage.setItem("page" , "1");
 }
 
 const outsideScreen = () => {
-    document.location.href = "outsideScreen.html";
+    // document.location.href = "outsideScreen.html";
+    window.open("https://pelebahalag.github.io/outsideScreen.html");
+    sessionStorage.setItem("page" , "2");
 }
 
 const loadTimeline = () => { 
     document.getElementById("back").addEventListener("click" , () => {
-        document.location.href = "main.html";
+        document.location.href = "index.html";
     });
     if(document.location.href.includes("insideScreen.html")){
         document.getElementById("arrow3").addEventListener("click" , openCard);
